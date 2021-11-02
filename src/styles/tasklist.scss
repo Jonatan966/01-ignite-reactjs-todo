@@ -163,4 +163,17 @@ section.task-list {
       }
     } 
   }
+
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+
+      .input-group {
+        width: 100%;
+      }
+    }
+
+    padding: 30px;
+  }
 }
