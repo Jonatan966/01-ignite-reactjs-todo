@@ -46,16 +46,21 @@ section.task-list {
         border-radius: 8px;
         border: 0;
         background: var(--green);
-        color: #fff;
+        color: var(--shapes);
         display: flex;
         flex-direction: row;
         align-items: center;
 
         padding: 14px;
-        transition: filter 0.2s;
+        transition: filter 0.2s, background 0.3s;
 
-        &:hover {
+        &:not(:disabled):hover {
           filter: brightness(0.95);
+        }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
         }
       }
     }
@@ -107,7 +112,7 @@ section.task-list {
 
               &:checked {
                 & ~ .checkmark {
-                  background-color: var(--blue);
+                  background-color: var(--primary);
                 }
 
                 & ~ .checkmark:after {
