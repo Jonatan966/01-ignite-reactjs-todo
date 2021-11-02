@@ -68,6 +68,7 @@ export function TaskList() {
       </header>
 
       <main>
+        {!tasks.length && <span>Sem tasks para ver</span>}
         <ul>
           {tasks.map(task => (
             <li key={task.id}>

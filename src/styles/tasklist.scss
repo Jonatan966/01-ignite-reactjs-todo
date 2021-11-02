@@ -69,6 +69,12 @@ section.task-list {
   main {
     margin-top: 3rem;
 
+    > span {
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+    }
+
     ul {
       list-style: none;
   
